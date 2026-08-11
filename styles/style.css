@@ -199,3 +199,15 @@ h1 em{
     font-size: 10px;
     text-transform: uppercase;
 }
+
+
+/* Secçoes gerais */
+
+.secao{
+    padding: 105px clamp(24px, 6vw, 96px);
+}
+
+.clara{
+    background: var(--claro);
+    color: #151515;
+}
