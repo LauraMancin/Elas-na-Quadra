@@ -82,9 +82,7 @@ nav a:hover{
     color: var(--laranja);
     transform: translateY(-3px);
 }
-/* ========================================
-SEÇÃO INICIAL
-======================================== */
+/* ======================================== SEÇÃO INICIAL ======================================== */
 
 .hero {
     min-height: 920px;
@@ -210,4 +208,16 @@ h1 em{
 .clara{
     background: var(--claro);
     color: #151515;
+}
+
+.topo {
+    margin-bottom: 55px;
+    display: grid;
+    grid-template-columns: 1fr minmax(280px, 470px);
+    align-items: end;
+    gap: 55px;
+}
+
+.topo h2{
+    margin: 12px 0 0;
 }
