@@ -95,10 +95,10 @@ nav a:hover{
     center / cover no-repeat;
 }
 
-/* CABEÇALHO FIXO */
+/* ======================================== CABEÇALHO FIXO ======================================== */
 
 
-/* CHAMADA PRINCIPAL */
+/* ======================================== CHAMADA PRINCIPAL ======================================== */
 
 .chamada {
     max-width: 680px;
@@ -168,7 +168,7 @@ h1 em{
     font-size: 25px;
 }
 
-/* NUMEROS E CREDITOS */
+/* ======================================== NÚMEROS E CRÉDITOS ======================================== */
 .numeros{
     width: fit-content; /* a largura se ajusta com o conteudo */
     margin-top: 45px;
@@ -199,8 +199,7 @@ h1 em{
 }
 
 
-/* Secçoes gerais */
-
+/* ======================================== SEÇÕES GERAIS ======================================== */
 .secao{
     padding: 105px clamp(24px, 6vw, 96px);
 }
@@ -220,4 +219,86 @@ h1 em{
 
 .topo h2{
     margin: 12px 0 0;
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+    text-transform: uppercase;
+}
+
+.topo >p{
+    color: #777777;
+    line-height: 1.7;
+}
+
+/* ======================================== SELEÇÃO BRASIL E EQUIPES ======================================== */
+
+#brasil{
+    padding-right: 34px;
+    padding-left: 34px;
+}
+
+#brasil .topo{
+    margin-bottom: 42px;
+    gap: 48px;
+}
+
+.equipes{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0,1fr));
+}
+
+.equipes article{
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #efeae1;
+    border: 1px solid #d7d2c8;
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.equipes article:hover, 
+.equipes article:focus-visible{
+    transform: translateY(-8px);
+    border-color: var(--laranja);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.22);
+}
+
+.equipes article >div{
+    padding: 18px 20px 16px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.equipes article span{
+    color: var(--laranja);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.12;
+}
+
+.equipes h3{
+    margin: auto 0 10px;
+    margin-top: 40px;
+    font-size: 17px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.equipes small{
+    color: #777777;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.equipes article >img{
+    width: 100%;
+    height: 240px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
 }
