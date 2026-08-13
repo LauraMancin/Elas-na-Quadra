@@ -209,7 +209,6 @@ h1 em{
     color: #151515;
 }
 
-<<<<<<< Updated upstream
 .topo {
     margin-bottom: 55px;
     display: grid;
@@ -303,21 +302,4 @@ h1 em{
     display: block;
     object-fit: cover;
     object-position: center;
-=======
-.topo h2{
-    font-size: 82px;
-    margin-top: 1px;
-}
-
-.topo b{
-    color: var(--laranja);
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.secao p{
-    margin-left: 1250px;
-    color: #777777;
-    font-size: 16px;
->>>>>>> Stashed changes
 }
